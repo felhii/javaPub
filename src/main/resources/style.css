@@ -1,0 +1,91 @@
+.image-view {
+    -fx-fill: white; /* Change la couleur de l'image en blanc */
+}
+.button
+{
+    -fx-background-color : #4B2F00;
+    -fx-text-fill : #e7e5e5;
+}
+.button:hover{
+    -fx-background-color : rgba(75, 47, 0, 0.61);
+}
+.button:pressed
+{
+    -fx-background-color :   #eccfa7;
+}
+
+.scroll-pane {
+    -fx-background-color: rgba(75, 47, 0, 0.61);
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #10165F;
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: black;
+}
+
+.combo-box {
+    -fx-background-color: #ffffff; /* Couleur de fond */
+    -fx-text-fill: #ffffff; /* Couleur du texte */
+    -fx-border-color: #ffffff; /* Couleur de la bordure */
+    -fx-border-radius: 5px; /* Rayon de la bordure */
+    -fx-padding: 5px; /* Espacement interne */
+}
+
+/* Style pour le champ de texte (input) dans le ComboBox */
+.combo-box .text-field {
+    -fx-background-color: #ffffff; /* Fond transparent */
+    -fx-border:#ffffff; /* Pas de bordure */
+    -fx-font-size: 14px; /* Taille de police */
+    -fx-prompt-text-fill: rgba(0, 0, 0, 0.51); /* Couleur du texte d'invite */
+}
+
+/* Style pour la flèche du ComboBox */
+.combo-box .arrow-button {
+    -fx-background-color: #ffffff; /* Couleur de fond */
+    -fx-shape: "M0 0 L5 5 L10 0 Z"; /* Forme de la flèche */
+}
+
+/* Style pour la liste déroulante du ComboBox */
+.combo-box .list-view {
+    -fx-background-color: rgba(75, 47, 0, 0.61); /* Couleur de fond */
+    -fx-text-fill: #ffffff; /* Couleur du texte */
+    -fx-border-color: rgba(75, 47, 0, 0.61); /* Couleur de la bordure */
+    -fx-border-radius: 5px;
+}
+
+
+.text-area {
+    -fx-background-color: rgba(75, 47, 0, 0.61);
+    -fx-text-fill: #e7e5e5;
+    -fx-border-width: 10;
+}
+
+.text-area:hover {
+    -fx-background-color: rgba(75, 47, 0, 0.61);
+}
+
+.text-area:pressed {
+    -fx-background-color: #eccfa7;
+}
+

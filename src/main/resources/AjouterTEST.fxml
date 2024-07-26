@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="396.0" prefWidth="151.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.AjouterTEST">
+   <children>
+      <Pane prefHeight="396.0" prefWidth="433.0">
+         <children>
+            <Pane prefHeight="396.0" prefWidth="434.0" style="-fx-background-color: #e8e1d5;" />
+            <ImageView fitHeight="241.0" fitWidth="473.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/MFELHI/Desktop/untitled1/src/main/resources/images/Capture.JPG" />
+               </image>
+            </ImageView>
+            <Button layoutX="227.0" layoutY="266.0" mnemonicParsing="false" onAction="#AnnulerSaisie" stylesheets="style.css" text="Annuler" />
+            <Button layoutX="353.0" layoutY="74.0" mnemonicParsing="false" onAction="#retour" stylesheets="style.css" text="retour" />
+            <Button layoutX="159.0" layoutY="266.0" mnemonicParsing="false" onAction="#AjouterForum" stylesheets="style.css" text="Affecter" />
+            <Text layoutX="25.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titer" wrappingWidth="86.13672637939453">
+               <font>
+                  <Font name="Cambria Bold" size="13.0" />
+               </font></Text>
+            <Text layoutX="25.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="86.13672637939453">
+               <font>
+                  <Font name="Cambria Bold" size="13.0" />
+               </font></Text>
+            <Text layoutX="25.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NomFormation" wrappingWidth="98.13672637939453">
+               <font>
+                  <Font name="Cambria Bold" size="13.0" />
+               </font></Text>
+            <TextField fx:id="TItreForum" layoutX="126.0" layoutY="86.0" prefHeight="25.0" prefWidth="167.0" stylesheets="style.css" />
+            <ComboBox fx:id="AfficherFormationNom" layoutX="126.0" layoutY="234.0" prefHeight="25.0" prefWidth="167.0" />
+            <TextArea fx:id="descriptionForum" layoutX="126.0" layoutY="126.0" prefHeight="99.0" prefWidth="227.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

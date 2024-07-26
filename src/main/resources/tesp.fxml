@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="546.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.Tesp">
+   <children>
+      <VBox fx:id="afficherPP" layoutX="90.0" layoutY="74.0" prefHeight="398.0" prefWidth="530.0" />
+   </children>
+</AnchorPane>

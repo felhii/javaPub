@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.AjouterFormation">
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="576.0" prefWidth="256.0" style="-fx-background-color: #05071F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/logo.png" />
+                    </image>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="50.0" />
+                    </VBox.margin>
+                </ImageView>
+
+
+
+                <Button fx:id="btnUser" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0"  text="Utilisateurs" textFill="#e7e5e5">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true" style="-fx-fill: white;">
+                            <image>
+                                <Image url="@images/user.svg" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="btnOutils" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Outils">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/outil.svg" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="btnFormation" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Formation">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/formation.svg" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="btnCours" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Cours">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/cours.svg" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="btnForum" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#InterfaceForumAction" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Forum">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/forum.svg" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="btnReclamation" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Reclamation">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/reclamation.svg" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="btnSignout" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Se Deconnecter">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/signOut.jpg" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+            </children>
+        </VBox>
+        <StackPane layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A;">
+            <children>
+
+                <Pane fx:id="pnlOverview" prefHeight="576.0" prefWidth="793.0">
+                    <children>
+                        <TextField layoutX="590.0" layoutY="47.0" prefHeight="27.0" prefWidth="183.0" promptText="search" style="-fx-background-color: #02030A; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" />
+                        <Label layoutX="55.0" layoutY="52.0" text="Formation" textFill="#e7e5e5">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="749.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+
+                        </ImageView>
+                        <TextField fx:id="nomF" layoutX="347.0" layoutY="169.0" prefHeight="27.0" prefWidth="148.0" style=" -fx-border-color: #B7C3D7; -fx-border-radius: 4em; -fx-control-inner-background: #02030A;" />
+                        <TextArea fx:id="descripF" layoutX="347.0" layoutY="216.0" prefHeight="72.0" prefWidth="148.0" style=" -fx-border-color: #B7C3D7; -fx-border-radius: 4em; -fx-control-inner-background: #02030A;" />
+                        <DatePicker fx:id="dateDF" layoutX="345.0" layoutY="309.0" prefHeight="26.0" prefWidth="151.0" style=" -fx-border-color: #B7C3D7; -fx-border-radius: 4em; -fx-control-inner-background: #02030A;" />
+                        <DatePicker fx:id="dateFF" layoutX="345.0" layoutY="361.0" prefHeight="26.0" prefWidth="150.0" style=" -fx-border-color: #B7C3D7; -fx-border-radius: 4em; -fx-control-inner-background: #02030A;" />
+
+                        <Text fill="#2a73ff" layoutX="264.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" textAlignment="CENTER" />
+                        <Text fill="#2a73ff" layoutX="264.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Fin" />
+                        <Text fill="#2a73ff" layoutX="267.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix" />
+                        <Text fill="#2a73ff" layoutX="266.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nbrCour" />
+                        <TextField fx:id="prixF" layoutX="346.0" layoutY="406.0" promptText="Prix" style=" -fx-border-color: #B7C3D7; -fx-border-radius: 4em; -fx-control-inner-background: #02030A;" />
+                        <TextField fx:id="nbrCourF" layoutX="346.0" layoutY="450.0" prefHeight="26.0" prefWidth="153.0" promptText="Nombre Cour" style=" -fx-border-color: #B7C3D7; -fx-border-radius: 4em; -fx-control-inner-background: #02030A;" />
+                        <Button fx:id="ajouterFormation" layoutX="376.0" layoutY="507.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="91.0" style="-fx-background-color: #ddb78c;-fx-control-inner-background: #02030A;-fx-border-radius: 4em;" stylesheets="@style.css" text="Ajouter" textAlignment="CENTER" textFill="WHITE" />
+                        <Text fill="#2a73ff" layoutX="262.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Debut" />
+                        <Text fill="#2a73ff" layoutX="255.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" textAlignment="CENTER" wrappingWidth="73.7484130859375" />
+
+                    </children>
+                </Pane>
+            </children>
+        </StackPane>
+
+    </children>
+    <effect>
+        <DropShadow color="#1b1eeb" />
+    </effect>
+</AnchorPane>

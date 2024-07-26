@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.PUb">
+   <children>
+      <Button layoutX="460.0" layoutY="151.0" mnemonicParsing="false" onAction="#importerImage" text="importe" />
+      <TextField fx:id="pathImage" layoutX="300.0" layoutY="151.0" />
+      <Text layoutX="232.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ContenuP" wrappingWidth="58.399999999999864" />
+      <Text layoutX="248.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image" wrappingWidth="42.93670654296875" />
+      <Text layoutX="240.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IDForum" wrappingWidth="58.40000000000009" />
+      <Text layoutX="356.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IDUser" wrappingWidth="58.40000000000009" />
+      <TextField fx:id="idforum" layoutX="300.0" layoutY="196.0" />
+      <TextArea fx:id="ContenuPublication" layoutX="300.0" layoutY="49.0" prefHeight="95.0" prefWidth="200.0" />
+      <Pane fx:id="Photo" layoutX="44.0" layoutY="180.0" prefHeight="84.0" prefWidth="106.0" />
+      <TextField fx:id="idUser" layoutX="157.0" layoutY="18.0" />
+      <Button layoutX="504.0" layoutY="18.0" mnemonicParsing="false" onAction="#AjouterPubliction" text="Ajouter" />
+      <Text fx:id="idForumBZi" layoutX="38.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="184.53668212890625" />
+      <Text fx:id="nblikMax" layoutX="14.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="167.7366943359375" />
+      <TextField fx:id="nomFormPubR" layoutX="269.0" layoutY="273.0" />
+      <Text fx:id="nbPUB" layoutX="423.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="131.7366943359375" />
+      <Button layoutX="333.0" layoutY="305.0" mnemonicParsing="false" onAction="#combienub" text="Button" />
+   </children>
+</AnchorPane>
